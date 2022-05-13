@@ -1,0 +1,101 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html{
+  background: url('galaxy.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  font-size: 62.5%;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header{
+  margin: 15px 0 15px 0;
+  text-align: center;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  padding: 0 5vw 0 5vw;
+  width: 100%;
+}
+
+#content-container {
+  background-color: rgb(8, 28, 69);
+  border-radius: 10px;
+  filter: drop-shadow(5px 5px 0px rgba(2, 15, 42));
+  height: fit-content;
+  padding: 15px 15px 25px 25px;
+  width: 50%;
+}
+
+#image-container {
+  display: inline;
+  text-align: center;
+  width: 50%;
+}
+
+img {
+  max-height: 425px;
+  max-width: 500px;
+  filter: drop-shadow(5px 5px 0px rgba(2, 15, 42));
+}
+
+/* .hidden {
+  display: none;
+} */
+
+/* -------------------- Font/Text --------------------- */
+
+h1, h2, h3 {
+  font-family: 'Exo 2', sans-serif;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 3.6rem;
+  padding: 0 0 15px 0;
+}
+
+h3 {
+  font-size: 3.2rem;
+  padding: 0 0 15px 0;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
