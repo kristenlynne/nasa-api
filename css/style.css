@@ -24,12 +24,43 @@
 /******************************************
 /* BASE STYLES
 /*******************************************/
-html{
+html {
   background: url('galaxy.jpeg') no-repeat center center fixed;
   background-size: cover;
   color: white;
   font-size: 62.5%;
 }
+
+button {
+  /* background:  linear-gradient(135deg, rgba(149,137,222,1) 0%, rgba(217,127,240,1) 100%); */
+  background: rgb(159, 145, 244);
+  border: none;
+  border-radius: 3px;
+  color:  white;
+  filter: drop-shadow(2px 2px 0px white);
+  margin-left: 5px;
+  padding: 5px 10px;
+  transition-property: background;
+  transition-duration: .5s;
+  width: 100px;
+}
+
+button:hover {
+  background: rgb(40, 97, 119);
+}
+
+input {
+  border: 2px solid rgb(8, 28, 69);
+  border-radius: 3px;
+  color: rgb(8, 28, 69);
+  height: 30px;
+  margin-right: 5px;
+  text-align: center;
+}
+
+/* .preload * {
+  transition: none !important;
+} */
 
 /******************************************
 /* LAYOUT
@@ -56,25 +87,30 @@ header{
 }
 
 #image-container {
-  display: inline;
   text-align: center;
   width: 50%;
 }
 
 img {
-  max-height: 425px;
-  max-width: 500px;
   filter: drop-shadow(5px 5px 0px rgba(2, 15, 42));
+  max-height: 70vh;
+  max-width: 100%; /* using % makes photo grow & shrink w/ window size */
+  padding-right: 25px;
 }
 
-/* .hidden {
+.hidden {
   display: none;
-} */
+}
 
 /* -------------------- Font/Text --------------------- */
 
 h1, h2, h3 {
+  filter: drop-shadow(3px 3px 0px rgba(2, 15, 42));
   font-family: 'Exo 2', sans-serif;
+}
+
+p, input {
+  font-family: 'Raleway', sans-serif;
 }
 
 h1 {
@@ -88,12 +124,21 @@ h2 {
 }
 
 h3 {
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   padding: 0 0 15px 0;
 }
 
 p {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 2rem;
+}
+
+button {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 /******************************************
