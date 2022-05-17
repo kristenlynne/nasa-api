@@ -23,7 +23,6 @@ function getFetch(){
         document.querySelector('p').innerText = data.explanation
         document.querySelector('h3').innerText = data.title
         document.querySelector('a').href = data.url
-        // document.querySelector('span').innerText = data.copyright // some of them don't have copyright so it displays undefined, we don't want that so I won't add this until I figure out to fixed that.
       })
       .catch(err => {
           console.log(`error ${err}`)
@@ -46,7 +45,9 @@ let maxDate = year + '-' + month + '-' + day;
 document.querySelector('#currentDate').setAttribute('max', maxDate);
 let date = document.querySelector('#currentDate').value = maxDate;
 
-$(window).load(function() {
-  $("body").removeClass("preload");
-});
+// disable css animation from going on page load
+
+// $(window).load(function() {
+//   $("body").removeClass("preload");
+// });
  
