@@ -22,7 +22,7 @@
 🌕 Fully responsive design that works on any size screen.
 
 
-## Optimizations
+## Optimizations:
 
 NASA’s first Astronomy Picture Of The Day was on June 16, 1995 so I made all the dates prior to that deactivated. There are some dates that don’t have any data, those dates are still clickable and the text box reads “undefined.” The project needs to be optimized to disable dates with no data from being selected. In addition, the pictures sometimes load slowly so further optimizations can be made regarding that.
 
